@@ -13,6 +13,8 @@ public class UserDaoImpl implements UserDao{
     @Autowired
     private RedisTemplate redisTemplate;
     private static final String KEY = "USER";
+
+    //Save user to db
     @Override
     public boolean saveUser(User user) {
         try {
